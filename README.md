@@ -11,7 +11,7 @@ A Linux-only utility to mount Truecrypt/Veracrypt containers along with special 
     $ sudo apt install exfat-fuse exfat-utils
     ```
 
-    On Fedora 30 it can be done by downloading a file [here](https://www.rpmfind.net/linux/rpm2html/search.php?query=fuse-exfat) and applying the command:
+    On Fedora 30+ it can be done by downloading a file [here](https://www.rpmfind.net/linux/rpm2html/search.php?query=fuse-exfat) and applying the command:
 
     ```
     $ sudo dnf install fuse-exfat-<the-latest-version>.x86_64.rpm
@@ -22,5 +22,5 @@ A Linux-only utility to mount Truecrypt/Veracrypt containers along with special 
 ## Installation
 
 ```
-go install github.com/pkorotkov/safebox
+GO111MODULE=on go install github.com/pkorotkov/safebox/cmd/safebox@latest
 ```
